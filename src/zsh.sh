@@ -31,7 +31,7 @@ cd $WORKSPACE/zsh
 ./configure --prefix="$HOME/local" \
     CPPFLAGS="-I$HOME/local/include" \
     LDFLAGS="-L$HOME/local/lib"
-make -j && make install
+make -j8 && make install
 
 # env var configure & zsh auto-launch
 echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.profile
@@ -43,7 +43,7 @@ echo "---------------------env var config done---------------------"
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 chmod +x install.sh
 echo 'sh install.sh' |sh
-echo 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions' |sh
+echo 'git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions' |sh
 echo 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting' |sh
 echo "sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions\ zsh-syntax-highlighting/g' ~/.zshrc" |sh
 echo "sed -i 's/robbyrussell/ys/g' ~/.zshrc" |sh
