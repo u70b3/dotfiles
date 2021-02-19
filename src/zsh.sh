@@ -45,8 +45,9 @@ chmod +x install.sh
 echo 'sh install.sh' |sh
 echo 'git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions' |sh
 echo 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting' |sh
-echo "sed -i 's/plugins=(git/plugins=(git\ zsh-autosuggestions\ zsh-syntax-highlighting/g' ~/.zshrc" |sh
-echo "sed -i 's/robbyrussell/ys/g' ~/.zshrc" |sh
+# MacOS sed is different
+echo "sed -i '.bak' 's/plugins=(git/plugins=(git\ zsh-autosuggestions\ zsh-syntax-highlighting/g' ~/.zshrc" |sh
+echo "sed -i '.bak' 's/robbyrussell/ys/g' ~/.zshrc" |sh
 echo "source ~/.zshrc"|sh
 cd $WORKSPACE_OLD
 echo "----------------------install plugins done---------------------"
