@@ -1,5 +1,5 @@
-#!/usr/bin/bash
-
+ #!/usr/bin/env bash
+ 
 SERVER="tars"
 BASEURL="csighub.tencentyun.com/sppd_wh"
 IMAGE="tars_4.8_dev:2.4.14"
