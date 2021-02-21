@@ -1,0 +1,3 @@
+
+#.zshrc
+set -o vi
