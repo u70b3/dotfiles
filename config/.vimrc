@@ -1,4 +1,3 @@
-#.vimrc
 
 set nu
 sy on
