@@ -1,2 +1,3 @@
-# script
-记录个人常用的脚本/配置文件等
+# dotfiles
+
+My config files
