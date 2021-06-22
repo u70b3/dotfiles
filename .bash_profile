@@ -14,3 +14,4 @@ set -o vi
 #             git config --global proxy.https socks5://$windows_host:23333
 # fi
 
+[[ -f ~/.aliases ]] && source ~/.aliases
