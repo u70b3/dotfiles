@@ -10,11 +10,12 @@
     au = add -u .
     ll = log --oneline --graph
     d = difftool
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
 [diff]
     tool = vimdiff
 
-
+# not master
 [init]
 	defaultBranch = main
 
