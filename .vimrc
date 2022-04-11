@@ -14,4 +14,6 @@ colorscheme desert
 set cursorcolumn
 set cursorline
 
+set mouse=a
+
 set encoding=utf-8
